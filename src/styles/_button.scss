@@ -1,0 +1,22 @@
+.button {
+  background: none;
+  outline: none;
+
+  border: 1px solid #000;
+  cursor: pointer;
+
+  transition: box-shadow 0.2s;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  &:active {
+    background-color: #000;
+    color: #fff;
+  }
+
+  &:focus {
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  }
+}

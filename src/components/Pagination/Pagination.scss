@@ -1,0 +1,30 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2em 0;
+
+  .page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #eee;
+    }
+
+    &--current {
+      background-color: #000;
+      color: #fff;
+      cursor: default;
+      &:hover {
+        background-color: #000;
+      }
+    }
+  }
+}

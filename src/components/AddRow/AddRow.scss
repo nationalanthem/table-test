@@ -1,0 +1,48 @@
+@import '../../styles/button';
+@import '../../styles/input';
+
+.add-row-form {
+  margin: 2em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    input {
+      @extend .input;
+      padding: 5px;
+      margin: 8px 0;
+    }
+  }
+
+  &__input {
+    text-align: center;
+    margin: 4px 0;
+  }
+
+  &__submit {
+    @extend .button;
+
+    padding: 10px;
+    margin: 1em 0;
+    font-size: 17px;
+
+    &:disabled {
+      border-color: rgba(16, 16, 16, 0.3);
+      &:hover {
+        background-color: unset;
+        cursor: unset;
+      }
+    }
+  }
+
+  &__toggle {
+    @extend .button;
+    padding: 5px 15px;
+    margin: 1em 0;
+  }
+}
